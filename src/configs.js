@@ -1,12 +1,12 @@
-import { ElementPropTypes } from '@volusion/element-proptypes';
+import { ElementPropTypes } from "@volusion/element-proptypes";
 
 export const configSchema = {
-    text: {
-        label: 'Text content',
-        type: ElementPropTypes.string
-    }
+  text: {
+    label: "Text content",
+    type: ElementPropTypes.string,
+  },
 };
 
 export const defaultConfig = {
-    text: 'Element Starter Block'
+  text: "Element Starter Block",
 };

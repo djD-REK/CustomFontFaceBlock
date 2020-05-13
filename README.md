@@ -67,7 +67,7 @@ If this is the very first time you're pushing your block up, you will need to ru
 npm run build && element publish -n "<Your Displayed Block Name>"
 ```
 
--   At this point, your block is in a "staging" state. You can preview your block in Site Designer and on the storefront through the Preview link in Site Designer, but it will not be visible on the live site.
+- At this point, your block is in a "staging" state. You can preview your block in Site Designer and on the storefront through the Preview link in Site Designer, but it will not be visible on the live site.
 
 ### Minor updates
 
@@ -77,7 +77,7 @@ After your block has been published the first time, if you are making a minor ve
 npm run build && element update
 ```
 
--   At this point, your block is in a "staging" state. You can preview your changes in Site Designer and on the storefront through the Preview link in Site Designer, but they will not be visible on the live site.
+- At this point, your block is in a "staging" state. You can preview your changes in Site Designer and on the storefront through the Preview link in Site Designer, but they will not be visible on the live site.
 
 ### Major updates
 
@@ -87,9 +87,9 @@ If you have a breaking change that you need to make, you can use the below comma
 npm run build && element publish -m
 ```
 
--   At this point, your block is in a "staging" state. You can preview your changes in Site Designer and on the storefront through the Preview link in Site Designer, but they will not be visible on the live site.
--   If you need to make additional updates after this point, you can use the `npm run build && element update` command to stage your changes.
--   Major updates will will require a manual opt-in from users in order to upgrade from the old version to the new one after release. Any new instances of the block that are dropped into the page will automatically use the latest version.
+- At this point, your block is in a "staging" state. You can preview your changes in Site Designer and on the storefront through the Preview link in Site Designer, but they will not be visible on the live site.
+- If you need to make additional updates after this point, you can use the `npm run build && element update` command to stage your changes.
+- Major updates will will require a manual opt-in from users in order to upgrade from the old version to the new one after release. Any new instances of the block that are dropped into the page will automatically use the latest version.
 
 ### Releasing to production
 
