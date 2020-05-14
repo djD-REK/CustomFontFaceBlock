@@ -3,14 +3,15 @@ import { css, StyleSheet } from "aphrodite/no-important"
 import { getStyles } from "./getStyles"
 import { defaultConfig } from "./configs"
 
+function addLink(href) {
+  const link = document.createElement("link")
+  link.setAttribute("type", "text/css")
+  link.setAttribute("rel", "stylesheet")
+  link.setAttribute("href", href)
+  document.head.appendChild(link)
+}
+
 const Block = (props) => {
-  function addLink(href) {
-    const link = document.createElement("link")
-    link.setAttribute("type", "text/css")
-    link.setAttribute("rel", "stylesheet")
-    link.setAttribute("href", href)
-    document.head.appendChild(link)
-  }
   addLink(
     "https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&display=swap"
   )
