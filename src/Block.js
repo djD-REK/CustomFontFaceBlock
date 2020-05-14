@@ -13,7 +13,7 @@ const Block = (props) => {
     document.head.appendChild(link)
   }
 
-  // React's Effect Hook (useEffect) runs a function once the Block is loaded
+  // React's Effect Hook (useEffect) runs a function when the Block is rendered
   useEffect(
     () =>
       // Add a link to the font stylesheet
