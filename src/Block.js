@@ -4,21 +4,25 @@ import { getStyles } from "./getStyles"
 import { defaultConfig } from "./configs"
 
 const Block = (props) => {
-  // Helper function to add a stylesheet to the <head> element
-  const addLink = (href) => {
-    const link = document.createElement("link")
-    link.setAttribute("type", "text/css")
-    link.setAttribute("rel", "stylesheet")
-    link.setAttribute("href", href)
-    document.head.appendChild(link)
-  }
-
   // React's Effect Hook (useEffect) runs a function when the Block is rendered
   useEffect(
     () =>
       // Add a link to the font stylesheet
-      addLink(
+      props.utils.addLink(
         "https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&display=swap"
+      ),
+    []
+  )
+  // The second parameter is an empty array, [], to make useEffect run just once
+
+  // React's Effect Hook (useEffect) runs a function when the Block is rendered
+  useEffect(
+    () =>
+      // Add a link to the third-party script
+      props.utils.addScript(
+        "https://cdn.jsdelivr.net/algoliasearch/3/algoliasearchLite.min.js",
+        false, // optional boolean: include the defer attribute
+        false // optional boolean:  include the async attribute,
       ),
     []
   )
